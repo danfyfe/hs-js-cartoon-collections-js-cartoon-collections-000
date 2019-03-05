@@ -23,7 +23,7 @@ function longPlaneteerCalls(calls) {
 }
 
 function findTheCheese (foods) {
-  var cheeses = ['cheddar','gouda','camembert'];
+  var cheeses = ['cheddar','gouda','camembert','swiss'];
   for (var i = 0; i < foods.length; i++){
     let food = foods[i];
     for (var c = 0; c < cheeses.length; c++){
@@ -33,6 +33,19 @@ function findTheCheese (foods) {
   } 
  } return 'no cheese!';
 }
+
+function wordsThatStartWithB(words){
+  var bWords = [];
+  for(var i = 0; i < words.length; i++){
+    if (words[i][0] === 'b'){
+      bWords.push(words[i]);
+    }
+  } return bWords;
+}
+
+wordsThatStartWithB(['apple', 'banana', 'cheddar']) // ['banana']
+wordsThatStartWithB(['brian', 'bobby', 'chad']) // ['brian', 'bobby']
+wordsThatStartWithB(['chad', 'cher', 'chase']) // []
 
 
 /*{
