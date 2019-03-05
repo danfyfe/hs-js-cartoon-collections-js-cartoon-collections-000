@@ -14,12 +14,14 @@ function summonCaptainPlanet(planeteerCalls){
   return hypedPlaneteerCalls;
 }
 
-function longPlaneteerCalls(calls) {
-  for (var i = 0; i < calls.length; i++){
-    if (calls[i].length > 4){
+function longPlaneteerCalls(words) {
+  for (var i = 0; i < words.length; i++){
+    if (words[i].length > 4){
       return true;
-    } 
-   } return false;
+    } else {
+      return false;
+    }
+  }
 }
 
 function findTheCheese (foods) {
